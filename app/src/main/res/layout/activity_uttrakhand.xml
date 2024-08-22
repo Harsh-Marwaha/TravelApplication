@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.UttrakhandActivity"
+    android:background="@color/white">
+
+    
+    <ImageView
+        android:id="@+id/ivDestination"
+        android:layout_width="410dp"
+        android:layout_height="350dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/uk_one" />
+
+    <ImageButton
+        android:id="@+id/btnImgBack"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:background="@drawable/button_bg"/>
+
+    <TextView
+        android:id="@+id/tvDetailsOfDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btnImgBack"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="#00000000"
+        android:paddingTop="3dp"
+        android:text=""/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@id/ivDestination"
+           android:layout_marginTop="-20dp"
+           android:background="@drawable/home_bg" >
+          <View
+              android:layout_width="50dp"
+              android:layout_height="40dp"
+              android:layout_centerHorizontal="true"/>
+           <ImageView
+               android:layout_width="50dp"
+               android:layout_height="40dp"
+               android:src="@drawable/remove"
+               android:layout_marginTop="0dp"
+               android:layout_centerHorizontal="true"
+               android:scaleType="fitXY"
+               app:tint="#9A9A9A" />
+           <TextView
+               android:id="@+id/tvHeading"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Uttrakhand"
+               android:textSize="25sp"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               android:layout_margin="15dp"/>
+           <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_below="@id/tvHeading"
+               android:layout_marginTop="0dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Uttarakhand, a state in northern India crossed by the Himalayas, is known for its Hindu pilgrimage sites. Rishikesh, a major centre for yoga study, was made famous by the Beatles’ 1968 visit. The city hosts the evening Ganga Aarti, a spiritual gathering on the sacred Ganges River. The state's forested Jim Corbett National Park shelters Bengal tigers and other native wildlife."
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:layout_margin="15dp"
+                        android:padding="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"/>
+
+                    <TextView
+               android:id="@+id/tvItenaryHeading"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="UTTARAKHAND ITINERARY FOR 7 DAYS"
+               android:layout_below="@id/tvContent"
+               android:textSize="18sp"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               android:layout_margin="15dp"
+               android:padding="5dp"/>
+
+                    <TextView
+               android:id="@+id/tvItenaryContent"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="DAY 1: HARIDWAR + RISHIKESH (STAY AT GLASSHOUSE, RISHIKESH)\n\n
+It takes about 45 minutes to go 20 kilometres, from Haridwar to Rishikesh
+Arrive in Haridwar, a city renowned for its spiritual significance and the holy River Ganges, to start your tour.
+Explore the well-known Har Ki Pauri ghat and spend the evening taking in the mesmerising Ganga Aarti ceremony.
+Travel to Rishikesh, the home of yoga, to partake in yoga and meditation practices.
+Visit Ram Jhula and Lakshman Jhula, two famous suspension bridges that provide sweeping vistas of the Ganges.
+Take in the calm ambience of Glasshouse, a peaceful establishment in Rishikesh renowned for its cosy lodgings and restorative ambience."
+               android:layout_below="@id/tvItenaryHeading"
+               android:textSize="18sp"
+               android:textColor="@color/black"
+               android:layout_margin="15dp"
+               android:padding="5dp"/>
+                   
+
+
+               </RelativeLayout>
+           </ScrollView>
+       </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnStartAdventure"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/destination_button_bg"
+        android:text="Start Adventure"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

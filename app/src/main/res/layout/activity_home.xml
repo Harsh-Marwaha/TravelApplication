@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.HomeActivity"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        app:menu="@menu/menu_bottom_nav"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/black"/>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--        <HorizontalScrollView-->
+<!--            android:id="@+id/hvDestination"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="220dp"-->
+<!--            android:layout_below="@id/tvDestination"-->
+<!--            android:elevation="5dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:elevation="5dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    app:cardCornerRadius="15dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/rlUttrakhand"-->
+<!--                        android:layout_width="280dp"-->
+<!--                        android:layout_height="fill_parent">-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="280dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:src="@drawable/uttrakhand"-->
+<!--                            android:scaleType="fitXY">-->
+<!--                        </ImageView>-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Uttrakhand"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:textSize="20sp"-->
+<!--                            android:layout_alignParentBottom="true"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:background="@drawable/text_bg"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:paddingLeft="10dp"-->
+<!--                            android:paddingRight="10dp"-->
+<!--                            android:paddingTop="7dp"-->
+<!--                            android:paddingBottom="7dp"/>-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/ivUttrakhand"-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:src="@drawable/heart"-->
+<!--                            android:background="@drawable/heart_bg"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:layout_alignParentRight="true"/>-->
+<!--                    </RelativeLayout>-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    app:cardCornerRadius="15dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/rlJaipur"-->
+<!--                        android:layout_width="280dp"-->
+<!--                        android:layout_height="fill_parent">-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="280dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:src="@drawable/jaipur"-->
+<!--                            android:scaleType="fitXY">-->
+<!--                        </ImageView>-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Jaipur"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:textSize="20sp"-->
+<!--                            android:layout_alignParentBottom="true"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:background="@drawable/text_bg"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:paddingLeft="10dp"-->
+<!--                            android:paddingRight="10dp"-->
+<!--                            android:paddingTop="7dp"-->
+<!--                            android:paddingBottom="7dp"/>-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:src="@drawable/heart"-->
+<!--                            android:background="@drawable/heart_bg"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:layout_alignParentRight="true"/>-->
+<!--                    </RelativeLayout>-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    app:cardCornerRadius="15dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/rlManali"-->
+<!--                        android:layout_width="280dp"-->
+<!--                        android:layout_height="fill_parent">-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="280dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:src="@drawable/manali"-->
+<!--                            android:scaleType="fitXY">-->
+<!--                        </ImageView>-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Manali"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:textSize="20sp"-->
+<!--                            android:layout_alignParentBottom="true"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:background="@drawable/text_bg"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:paddingLeft="10dp"-->
+<!--                            android:paddingRight="10dp"-->
+<!--                            android:paddingTop="7dp"-->
+<!--                            android:paddingBottom="7dp"/>-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:src="@drawable/heart"-->
+<!--                            android:background="@drawable/heart_bg"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:layout_alignParentRight="true"/>-->
+<!--                    </RelativeLayout>-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    app:cardCornerRadius="15dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/rlGoa"-->
+<!--                        android:layout_width="280dp"-->
+<!--                        android:layout_height="match_parent">-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="280dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:src="@drawable/goa"-->
+<!--                            android:scaleType="fitXY">-->
+<!--                        </ImageView>-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Goa"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:textSize="20sp"-->
+<!--                            android:layout_alignParentBottom="true"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:background="@drawable/text_bg"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:paddingLeft="10dp"-->
+<!--                            android:paddingRight="10dp"-->
+<!--                            android:paddingTop="7dp"-->
+<!--                            android:paddingBottom="7dp"/>-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:src="@drawable/heart"-->
+<!--                            android:background="@drawable/heart_bg"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:layout_alignParentRight="true"/>-->
+<!--                    </RelativeLayout>-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </HorizontalScrollView>-->
+
+
+

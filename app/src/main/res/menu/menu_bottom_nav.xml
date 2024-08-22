@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottomNavHome"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_bottom_nav"
+        android:iconTint="@color/black"/>
+
+
+    <item
+        android:id="@+id/bottomNavHotels"
+        android:title="Hotels"
+        android:icon="@drawable/baseline_hotel_24"
+        android:iconTint="@color/black"/>
+
+    <item
+        android:id="@+id/bottomNavOrders"
+        android:title="My Odrers"
+        android:icon="@drawable/baseline_menu_book_24"
+        android:iconTint="@color/black"/>
+
+
+    <item
+        android:id="@+id/bottomNavSaved"
+        android:title="saved"
+        android:icon="@drawable/heart"
+        android:iconTint="@color/black"/>
+
+
+    <item
+        android:id="@+id/bottomNavProfile"
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_24"
+        android:iconTint="@color/black"/>
+</menu>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivHome"
+            android:layout_width="match_parent"
+            android:layout_height="251dp"
+            android:src="@drawable/home_relative_layout" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ivHome"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ivHome"
+                android:layout_marginTop="-29dp"
+                android:background="@drawable/home_bg"
+                android:elevation="5dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvDestination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Destinations"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_margin="15dp" />
+
+                <ImageView
+                    android:id="@+id/ivArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_arrow_forward_24"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="25dp"
+                    app:tint="@color/black" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recViewHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="255dp"
+                    android:layout_below="@id/tvDestination"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvPromotions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Promotions"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_margin="15dp"
+                    android:layout_below="@id/recViewHome"/>
+
+                <ImageView
+                    android:id="@+id/ivPromotionsArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_arrow_forward_24"
+                    app:tint="@color/black"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="25dp"
+                    android:layout_below="@id/recViewHome"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recViewPromotions"
+                    android:layout_width="match_parent"
+                    android:layout_height="255dp"
+                    android:layout_below="@id/tvPromotions"
+                    android:padding="10dp"/>
+
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>
